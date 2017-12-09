@@ -28,6 +28,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+p {
+  line-height: 1.35;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
 .title-party {
   color: #34D1D1;
 }
@@ -45,7 +51,6 @@ h2 {
   display: inline-block;
   border-collapse: collapse;
   vertical-align: middle;
-  
 }
 
 .section-name {
@@ -58,6 +63,8 @@ h2 {
 .section-header {
   margin: 50px 0;
 }
+
+/* Accordion Tab Styling */
 
 .accord-tabs-container {
   display: flex;
@@ -95,15 +102,35 @@ h2 {
   border-left: 1px solid #666666;
   border-right: 1px solid #666666;
   border-bottom: 1px solid #666666;
-  height: 400px;
+  padding: 20px;
+  vertical-align: middle;
+  display: flex;
 }
 
 .accord-tab-selected#acTab4 {
   border-right: 1px solid #666666;
 }
 
+/*++++++ card styling +++++++++*/
 
+.accord-photo {
+  width: 32%;
+  justify-content: center;
+  display: inline-block;
+  max-height: 400px;  
+}
 
+.accord-main-content {
+  display: inline-block;
+  width: 66%;
+  text-align:;
+  /* background-color: magenta; */
+  padding: 50px;
+}
+
+.accord-content-divider {
+  width: 100%;
+}
 
 /* DISPLAY NONE!!!! */
 
