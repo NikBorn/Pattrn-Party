@@ -1,0 +1,60 @@
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  margin: 0 70px;
+}
+
+
+body { 
+  margin: 0;
+}
+
+header {
+  background-color: #2F2235;
+  color: white;
+  padding: 8px 70px;
+}
+
+h2 {
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.title-party {
+  color: #34D1D1;
+}
+
+.header-name {
+  padding: 4px 10px 4px 0;
+  float: right;
+}
+
+.divider {
+  height: 1px;
+  width: 82%;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
+  display: inline-block;
+  border-collapse: collapse;
+  vertical-align: middle;
+  
+}
+
+.section-name {
+  font-weight: 300;
+  /* margin-left: 48px; */
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.section-header {
+  margin: 50px 0;
+}
