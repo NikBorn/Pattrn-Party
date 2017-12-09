@@ -81,14 +81,14 @@ h2 {
   background-color: #F2F2F2;
 }
 
+.accord-tab:last-of-type {
+  border-right: none;
+}
+
 .accord-tab-selected {
   border: 1px solid #666666;
   border-bottom: none;
   background-color: #FFFFFF;  
-}
-
-.accord-tab:last-of-type {
-  border-right: none;
 }
 
 .accord-main {
@@ -98,13 +98,14 @@ h2 {
   height: 400px;
 }
 
+.accord-tab-selected#acTab4 {
+  border-right: 1px solid #666666;
+}
 
 
 
 
-
-
-
+/* DISPLAY NONE!!!! */
 
 .display-none {
   display: none;
