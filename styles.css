@@ -1,4 +1,4 @@
-*, 
+ *, 
 *:before, 
 *:after {
   box-sizing: border-box;
@@ -10,7 +10,6 @@
 main {
   margin: 0 70px;
 }
-
 
 body { 
   margin: 0;
@@ -34,13 +33,50 @@ p {
   font-size: 18px;
 }
 
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: none;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  /* padding: 0 18px; */
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .title-party {
   color: #34D1D1;
 }
 
-.header-name {
-  padding: 4px 10px 4px 0;
-  float: right;
+.accord-photo {
+  width: 100%;
+}
+
+.section-name {
+  font-weight: 300;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .divider {
@@ -53,31 +89,65 @@ p {
   vertical-align: middle;
 }
 
-.section-name {
-  font-weight: 300;
-  /* margin-left: 48px; */
-  display: inline-block;
-  margin-right: 50px;
+@media screen and (min-width: 750px) {
+
+  body {
+    background-color: magenta;
+  }
+
+  .accordion {
+    order: 1;
+    width: 25%;
+    position: absolute;
+  }
+
+  .panel {
+    order: 2;
+  }
+
+  .main-content-container {
+    position: relative;
+  }
+
+  #ac2 {
+    left: 25%;
+  }
+
+  #ac3 {
+    left: 50%;
+  }
+
+  #ac4 {
+    left: 75%;
+  }
+
 }
+
+
+/*
+
+
+.header-name {
+  padding: 4px 10px 4px 0;
+  float: right;
+}
+
+
+
+
 
 .section-header {
   margin: 50px 0;
 }
 
-/* Accordion Tab Styling */
+++++++++Accordion Tab Styling+++++++++++
 
 .accord-tabs-container {
   display: flex;
   border-collapse: collapse;
-  /* border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black; */
 }
 
-.accordion-cards {
-  width: 90%;
-  margin: 0 auto;
-}
+
 
 .accord-tab {
   height: 60px;
@@ -111,7 +181,7 @@ p {
   border-right: 1px solid #666666;
 }
 
-/*++++++ card styling +++++++++*/
+++++++ card styling +++++++++
 
 .accord-photo {
   width: 32%;
@@ -124,7 +194,6 @@ p {
   display: inline-block;
   width: 66%;
   text-align:;
-  /* background-color: magenta; */
   padding: 50px;
 }
 
@@ -132,8 +201,8 @@ p {
   width: 100%;
 }
 
-/* DISPLAY NONE!!!! */
+++++++++DISPLAY NONE!!!!++++++++++
 
 .display-none {
   display: none;
-}
+} */
