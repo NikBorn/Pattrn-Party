@@ -103,6 +103,7 @@ p {
 
   .panel {
     order: 2;
+    margin-top: 56px;
   }
 
   .main-content-container {
@@ -125,7 +126,8 @@ p {
     width: 32%;
     justify-content: center;
     display: inline-block;
-    max-height: 400px;
+    /* max-height: 400px; */
+    /* margin-top: 120px; */
   }
 
 }
