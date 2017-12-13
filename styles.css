@@ -126,8 +126,16 @@ p {
     width: 32%;
     justify-content: center;
     display: inline-block;
-    /* max-height: 400px; */
+    max-height: 400px;
     /* margin-top: 120px; */
+  }
+
+  .accord-main-content {
+    display: inline-block;
+    width: 66%;
+    text-align: ;
+    /* background-color: magenta; */
+    padding: 50px;
   }
 
 }
