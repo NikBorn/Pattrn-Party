@@ -121,6 +121,13 @@ p {
     left: 75%;
   }
 
+  .accord-photo {
+    width: 32%;
+    justify-content: center;
+    display: inline-block;
+    max-height: 400px;
+  }
+
 }
 
 
