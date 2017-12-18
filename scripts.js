@@ -8,4 +8,3 @@ $('.main-content-container').on('click', '.accordion', function () {
 });
 
 
-

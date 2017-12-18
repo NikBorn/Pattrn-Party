@@ -9,6 +9,10 @@
 
 main {
   margin: 0 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 body { 
@@ -33,6 +37,11 @@ p {
   font-size: 18px;
 }
 
+.section-header {
+  margin: 40px 0;
+  text-align: center;
+}
+
 .header-name {
   padding: 4px 10px 4px 0;
   float: right;
@@ -41,33 +50,43 @@ p {
 .main-content-container {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .accordion {
-  background-color: #eee;
+  background-color: #ccc;
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  border: none;
+  border: 1px solid #fff;
   text-align: left;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: #F2F2F2;
+  border: none;
+  border-bottom: none;
+}
+
+.main-content-container {
+  border: 1px solid #D1D2D3;
 }
 
 .panel {
-  /* padding: 0 18px; */
   background-color: white;
   display: block;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.accord-main-content {
+  padding: 10px;
 }
 
 .title-party {
@@ -86,16 +105,29 @@ p {
 
 .divider {
   height: 1px;
-  width: 82%;
-  border-bottom: 1px solid black;
+  width: 20%;
+  border-bottom: 1px solid #D1D2D3;
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   border-collapse: collapse;
-  vertical-align: middle;
+}
+
+.accord-content-divider {
+  width: 100%;
+  margin: 10px 0;
 }
 
 .display-none {
   display: none;
+}
+
+.view-code-btn {
+  background-color: #3F3244;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 30px;
+  width: 140px;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 750px) {
@@ -106,24 +138,21 @@ p {
     position: absolute;
   }
 
+  .active, 
+  .accordion:hover {
+    background-color: #ffffff;
+  }
+
   .panel {
     order: 2;
-    /* margin-top: 56px; */
-    /* border-left: 1px solid #666666;
-    border-right: 1px solid #666666;
-    border-bottom: 1px solid #666666; */
-    /* padding: 20px; */
-    /* vertical-align: middle; */
     display: flex;
+    padding: 10px;
   }
 
   .main-content-container {
     position: relative;
   }
 
-  #ac1 {
-    /* display: flex; */
-  }
   #ac2 {
     left: 25%;
   }
@@ -137,108 +166,33 @@ p {
   }
 
   .accord-photo {
-    height: auto;
-    /* width: 30%; */
+    height: 100%;
     max-width: 36%;
     justify-content: center;
     display: inline-block;
     max-height: 500px;
-    /* margin-top: 70px; */
-    /* margin-left: 20px; */
     margin-top: 60px;
   }
 
   .accord-main-content {
     display: inline-block;
     width: 66%;
-    text-align: ;
-    /* background-color: magenta; */
     padding: 50px 50px 20px 50px;
     margin-top: 30px;
+  }
+
+  .divider {
+    height: 1px;
+    width: 80%;
+    border-bottom: 1px solid #D1D2D3;
+    margin: 0 auto;
+    display: block;
+    border-collapse: collapse;
   }
 
   .display-none {
     display: none;
   }
 
-
 }
 
-
-/*
-
-
-
-
-
-
-
-
-.section-header {
-  margin: 50px 0;
-}
-
-++++++++Accordion Tab Styling+++++++++++
-
-.accord-tabs-container {
-  display: flex;
-  border-collapse: collapse;
-}
-
-
-
-.accord-tab {
-  height: 60px;
-  display: inline-block;
-  width: 25%;
-  border-bottom: 1px solid #666666;
-  border-right: 1px solid #FFFFFF;
-  background-color: #F2F2F2;
-}
-
-.accord-tab:last-of-type {
-  border-right: none;
-}
-
-.accord-tab-selected {
-  border: 1px solid #666666;
-  border-bottom: none;
-  background-color: #FFFFFF;  
-}
-
-.accord-main {
-  border-left: 1px solid #666666;
-  border-right: 1px solid #666666;
-  border-bottom: 1px solid #666666;
-  padding: 20px;
-  vertical-align: middle;
-  display: flex;
-}
-
-.accord-tab-selected#acTab4 {
-  border-right: 1px solid #666666;
-}
-
-++++++ card styling +++++++++
-
-.accord-photo {
-  width: 32%;
-  justify-content: center;
-  display: inline-block;
-  max-height: 400px;  
-}
-
-.accord-main-content {
-  display: inline-block;
-  width: 66%;
-  text-align:;
-  padding: 50px;
-}
-
-.accord-content-divider {
-  width: 100%;
-}
-
-++++++++DISPLAY NONE!!!!++++++++++
-
-*/
