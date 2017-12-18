@@ -10,18 +10,77 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
   <title>Document</title>
 </head>
+
 <body>
+
   <header>
   <h2>
     PATTRN <span class='title-party'>PARTY</span>
   </h2>
   <h3 class='header-name'>Nik Bornemeier</h3>
   </header>
+
   <main>
     <article class='section-header'>
-      <h3 class='section-name'>ACCORION TABS</h3>
+      <h3 class='section-name'>ACCORDION TABS</h3>
       <div class='divider'></div>
     </article>
+      <div class='main-content-container'>
+
+        <button class='accordion active' id='ac1'>TAB 1</button>
+        <div class="panel" id='panel-1'>
+          <img class='accord-photo' src='./assets/500x600.jpg'>
+          <div class='accord-main-content'>
+            <h3>Lorem ipsum dolor sit amet, consectetue</h3>
+            <div class='divider accord-content-divider'></div>
+          
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+              aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+              aliquip ex ea commodo consequat.</p>
+          
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+              facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          </div>
+        </div>
+        
+        <button class="accordion" id='ac2'>TAB 2</button>
+        <div class="panel display-none" id='panel-2'>
+          <img class='accord-photo' src='./assets/300x400.jpg'>
+          <div class='accord-main-content'>
+          <h3>Norris...Chuck, Noris</h3>
+          <div class='divider accord-content-divider'></div>
+            <p>Chuck Norris has no living enemies, Chuck Norris once roundhouse kicked a tree. Linking Logs were created, Chuck Norris doesn't wash his clothes, he disembowels them. Windows 7 was Chuck Norris's Idea. Outer space exists because it's afraid to be on the same planet with Chuck Norris.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          </div>
+        </div>
+        
+        <button class="accordion" id='ac3'>TAB 3</button>
+        <div class="panel display-none" id='panel-3'>
+          <img class='accord-photo' src='./assets/500x600.jpg'>
+          <div class='accord-main-content'>
+          <h3>Don't fuck...with Chuck</h3>
+          <div class='divider accord-content-divider'></div>
+            <p>Chuck Norris has no living enemies, Chuck Norris once roundhouse kicked a tree. Linking Logs were created, Chuck Norris doesn't wash his clothes, he disembowels them. Windows 7 was Chuck Norris's Idea. Outer space exists because it's afraid to be on the same planet with Chuck Norris.</p>  
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          </div>
+        </div>
+
+        <button class="accordion" id='ac4'>TAB 4</button>
+        <div class="panel display-none" id='panel-4'>
+          <img class='accord-photo' src='./assets/500x600.jpg'>
+          <div class='accord-main-content'>
+          <h3>Roundhouse Kick to the FACE!</h3>
+          <div class='divider accord-content-divider'></div>
+            <p>Chuck Norris has no living enemies, Chuck Norris once roundhouse kicked a tree. Linking Logs were created, Chuck Norris doesn't wash his clothes, he disembowels them. Windows 7 was Chuck Norris's Idea. Outer space exists because it's afraid to be on the same planet with Chuck Norris.</p>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.</p>
+          </div>
+        </div>
+      </div>
+<button class='view-code-btn' onclick="location.href='https://github.com/NikBorn/Pattrn-Party'" target="_blank">VIEW CODE</button>
+
   </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
